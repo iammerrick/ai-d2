@@ -4,7 +4,6 @@ Takes a concept and renders a diagram. Check out the `svgs` folder for some of t
 
 # Image Gallery
 
-This README contains all SVG files in the directory.
 **Bake Cookies**
 ![bake-cookies](svgs/bake-cookies.svg)
 
