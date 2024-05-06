@@ -5,7 +5,7 @@ Takes a concept and renders a diagram. Check out the `svgs` folder for some of t
 # Image Gallery
 
 **How a pencil is made**
-![how-a-pencil-is-made](how-a-pencil-is-made-in-detail-including-the-geographic-locations-that-provide-the-various-materials.svg)
+![how-a-pencil-is-made](svgs/how-a-pencil-is-made-in-detail-including-the-geographic-locations-that-provide-the-various-materials.svg)
 
 **Bake Cookies**
 ![bake-cookies](svgs/bake-cookies.svg)
