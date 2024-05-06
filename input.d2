@@ -1,0 +1,34 @@
+WaterCycle: {
+  evaporation: {
+    shape: oval
+    label: "Evaporation"
+  }
+  condensation: {
+    shape: oval
+    label: "Condensation"
+  }
+  precipitation: {
+    shape: oval
+    label: "Precipitation"
+  }
+  collection: {
+    shape: oval
+    label: "Collection"
+  }
+  infiltration: {
+    shape: oval
+    label: "Infiltration"
+  }
+  runoff: {
+    shape: oval
+    label: "Runoff"
+  }
+}
+
+evaporation -> condensation: "Water vapor rises"
+condensation -> precipitation: "Clouds form"
+precipitation -> collection: "Rain, snow, sleet, or hail"
+collection -> infiltration: "Water soaks into the ground"
+collection -> runoff: "Water flows over land"
+runoff -> evaporation: "Water returns to the atmosphere"
+infiltration -> evaporation: "Groundwater is heated"
