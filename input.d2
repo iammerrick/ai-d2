@@ -1,34 +1,39 @@
-WaterCycle: {
-  evaporation: {
-    shape: oval
-    label: "Evaporation"
-  }
-  condensation: {
-    shape: oval
-    label: "Condensation"
-  }
-  precipitation: {
-    shape: oval
-    label: "Precipitation"
-  }
-  collection: {
-    shape: oval
-    label: "Collection"
-  }
-  infiltration: {
-    shape: oval
-    label: "Infiltration"
-  }
-  runoff: {
-    shape: oval
-    label: "Runoff"
-  }
-}
+wood_supplier: Wood Supplier
+wood_supplier.location: Northern Europe
+graphite_supplier: Graphite Supplier
+graphite_supplier.location: Sri Lanka
+rubber_supplier: Rubber Supplier
+rubber_supplier.location: Brazil
+metal_supplier: Metal Supplier
+metal_supplier.location: China
 
-evaporation -> condensation: "Water vapor rises"
-condensation -> precipitation: "Clouds form"
-precipitation -> collection: "Rain, snow, sleet, or hail"
-collection -> infiltration: "Water soaks into the ground"
-collection -> runoff: "Water flows over land"
-runoff -> evaporation: "Water returns to the atmosphere"
-infiltration -> evaporation: "Groundwater is heated"
+factory: Pencil Factory
+factory.location: USA
+
+wood_supplier -> factory: Ship Wood
+graphite_supplier -> factory: Ship Graphite
+rubber_supplier -> factory: Ship Rubber
+metal_supplier -> factory: Ship Metal
+
+factory -> pencil: Manufacture Pencil
+pencil.shape: cylinder
+
+packaging: Packaging
+packaging.shape: rectangle
+
+pencil -> packaging: Package Pencils
+
+distribution_center: Distribution Center
+distribution_center.location: Global
+
+packaging -> distribution_center: Distribute Pencils
+
+retailers: Retailers
+retailers.location: Worldwide
+
+distribution_center -> retailers: Supply Pencils
+
+consumers: Consumers
+consumers.shape: person
+
+retailers -> consumers: Sell Pencils
